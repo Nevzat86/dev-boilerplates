@@ -1,0 +1,62 @@
+#myplugin-admin-root {
+	max-width: 960px;
+	margin: 20px 20px 20px 0;
+}
+
+.myplugin-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+
+.myplugin-header h1 {
+	margin: 0;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.myplugin-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 24px;
+	margin-bottom: 16px;
+}
+
+.myplugin-card h2 {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-size: 16px;
+}
+
+.myplugin-form-row {
+	margin-bottom: 16px;
+}
+
+.myplugin-form-row:last-child {
+	margin-bottom: 0;
+}
+
+.myplugin-items-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.myplugin-items-table th,
+.myplugin-items-table td {
+	padding: 8px 12px;
+	text-align: left;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.myplugin-items-table th {
+	font-weight: 600;
+	background: #f6f7f7;
+}
+
+.myplugin-empty {
+	padding: 40px;
+	text-align: center;
+	color: #757575;
+}

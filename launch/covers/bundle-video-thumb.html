@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 600px; height: 600px; overflow: hidden; font-family: 'Segoe UI', system-ui, sans-serif; }
+.cover {
+  width: 600px; height: 600px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 40px; position: relative;
+}
+.best { position: absolute; top: 24px; right: 24px; background: linear-gradient(135deg, #10b981, #059669); color: #fff; font-size: 13px; font-weight: 800; padding: 8px 16px; border-radius: 20px; transform: rotate(5deg); }
+.top-badge { display: inline-block; background: linear-gradient(135deg, #ec4899, #8b5cf6); color: #fff; font-size: 12px; font-weight: 700; padding: 5px 16px; border-radius: 16px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+h1 { color: #fff; font-size: 38px; font-weight: 900; line-height: 1.1; margin-bottom: 16px; }
+h1 span { background: linear-gradient(135deg, #f472b6, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { color: #a5b4fc; font-size: 16px; margin-bottom: 28px; }
+.icons { font-size: 40px; margin-bottom: 20px; display: flex; gap: 12px; align-items: center; }
+.play-icon { width: 44px; height: 44px; background: linear-gradient(135deg, #ec4899, #8b5cf6); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.play-triangle { width: 0; height: 0; border-left: 14px solid #fff; border-top: 9px solid transparent; border-bottom: 9px solid transparent; margin-left: 3px; }
+.price-row { display: flex; align-items: center; gap: 12px; }
+.price-old { color: #64748b; font-size: 18px; text-decoration: line-through; }
+.price-new { color: #fff; font-size: 32px; font-weight: 900; }
+</style></head>
+<body>
+<div class="cover">
+  <div class="best">BEST VALUE</div>
+  <div class="top-badge">Bundle + Video</div>
+  <div class="icons"><span>&#x1F9E9;</span><span>&#x1F527;</span><div class="play-icon"><div class="play-triangle"></div></div></div>
+  <h1>Code + <span>Learn</span></h1>
+  <p class="subtitle">Both boilerplates + video walkthroughs</p>
+  <div class="price-row">
+    <span class="price-old">$58+</span>
+    <span class="price-new">$69</span>
+  </div>
+</div>
+</body></html>

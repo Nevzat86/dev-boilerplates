@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1280px; height: 720px; overflow: hidden; font-family: 'Segoe UI', system-ui, sans-serif; }
+.cover {
+  width: 1280px; height: 720px;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 40%, #2d1b69 100%);
+  display: flex; position: relative;
+}
+.left { flex: 1; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; }
+.right { width: 520px; display: flex; align-items: center; justify-content: center; padding: 40px; }
+.badge { display: inline-block; background: linear-gradient(135deg, #ff6b35, #f7931e); color: #fff; font-size: 13px; font-weight: 700; padding: 6px 16px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 24px; }
+h1 { color: #fff; font-size: 44px; font-weight: 800; line-height: 1.15; margin-bottom: 20px; }
+h1 span { background: linear-gradient(135deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { color: #94a3b8; font-size: 20px; line-height: 1.5; margin-bottom: 36px; }
+.tech-badges { display: flex; gap: 10px; flex-wrap: wrap; }
+.tech { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #e2e8f0; padding: 8px 18px; border-radius: 8px; font-size: 15px; font-weight: 600; }
+.code-window {
+  width: 440px; background: #1e1e2e; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5); overflow: hidden;
+}
+.code-header { background: #181825; padding: 12px 16px; display: flex; gap: 8px; align-items: center; }
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.dot-r { background: #f38ba8; } .dot-y { background: #f9e2af; } .dot-g { background: #a6e3a1; }
+.code-title { color: #6c7086; font-size: 13px; margin-left: 12px; }
+.code-body { padding: 20px; font-family: 'Cascadia Code', 'Consolas', monospace; font-size: 13.5px; line-height: 1.7; }
+.kw { color: #cba6f7; } .fn { color: #89b4fa; } .str { color: #a6e3a1; } .cm { color: #6c7086; }
+.typ { color: #f9e2af; } .op { color: #94e2d5; } .num { color: #fab387; }
+.code-body div { white-space: pre; }
+.brand { position: absolute; bottom: 30px; right: 40px; color: rgba(255,255,255,0.3); font-size: 16px; font-weight: 600; letter-spacing: 1px; }
+</style></head>
+<body>
+<div class="cover">
+  <div class="left">
+    <div class="badge">Boilerplate</div>
+    <h1>Chrome Extension <span>MV3</span> Starter Kit</h1>
+    <p class="subtitle">Ship your next Chrome extension in days, not weeks.<br>Production-ready. Builds out of the box.</p>
+    <div class="tech-badges">
+      <span class="tech">React 18</span>
+      <span class="tech">TypeScript</span>
+      <span class="tech">Vite</span>
+      <span class="tech">Tailwind CSS</span>
+    </div>
+  </div>
+  <div class="right">
+    <div class="code-window">
+      <div class="code-header">
+        <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+        <span class="code-title">service-worker.ts</span>
+      </div>
+      <div class="code-body">
+        <div><span class="cm">// Type-safe message routing</span></div>
+        <div><span class="kw">import</span> { <span class="typ">MessageRouter</span> } <span class="kw">from</span> <span class="str">'./messaging'</span>;</div>
+        <div></div>
+        <div><span class="kw">const</span> <span class="fn">router</span> <span class="op">=</span> <span class="kw">new</span> <span class="typ">MessageRouter</span>();</div>
+        <div></div>
+        <div><span class="fn">router</span>.<span class="fn">on</span>(<span class="str">'GET_STATUS'</span>, <span class="kw">async</span> () <span class="op">=></span> {</div>
+        <div>  <span class="kw">const</span> data <span class="op">=</span> <span class="kw">await</span> <span class="fn">storage</span>.<span class="fn">get</span>(<span class="str">'config'</span>);</div>
+        <div>  <span class="kw">return</span> { <span class="fn">status</span>: <span class="str">'active'</span>, data };</div>
+        <div>});</div>
+        <div></div>
+        <div><span class="cm">// OAuth2 + BYOK + License</span></div>
+        <div><span class="kw">import</span> { <span class="typ">OAuth2</span> } <span class="kw">from</span> <span class="str">'./oauth'</span>;</div>
+        <div><span class="kw">import</span> { <span class="typ">LicenseValidator</span> } <span class="kw">from</span> <span class="str">'./license'</span>;</div>
+      </div>
+    </div>
+  </div>
+  <div class="brand">AdeaIT</div>
+</div>
+</body></html>

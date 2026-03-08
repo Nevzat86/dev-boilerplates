@@ -1,0 +1,23 @@
+{
+  "name": "wp-plugin-react-admin",
+  "version": "1.0.0",
+  "description": "WordPress plugin boilerplate with React admin panel",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build src/admin/index.js",
+    "start": "wp-scripts start src/admin/index.js",
+    "lint:js": "wp-scripts lint-js src/admin",
+    "lint:css": "wp-scripts lint-style src/admin/**/*.css"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0"
+  },
+  "dependencies": {
+    "@wordpress/api-fetch": "^7.0.0",
+    "@wordpress/components": "^28.0.0",
+    "@wordpress/element": "^6.0.0",
+    "@wordpress/i18n": "^5.0.0",
+    "@wordpress/notices": "^5.0.0",
+    "@wordpress/data": "^10.0.0"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 600px; height: 600px; overflow: hidden; font-family: 'Segoe UI', system-ui, sans-serif; }
+.cover {
+  width: 600px; height: 600px;
+  background: linear-gradient(135deg, #0c1929 0%, #0e2a4a 40%, #1a365d 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 40px;
+}
+.badge { display: inline-block; background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 16px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+.icon { font-size: 64px; margin-bottom: 20px; }
+h1 { color: #fff; font-size: 34px; font-weight: 800; line-height: 1.15; margin-bottom: 16px; }
+h1 span { background: linear-gradient(135deg, #60a5fa, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { color: #94a3b8; font-size: 16px; line-height: 1.4; margin-bottom: 28px; }
+.tech-badges { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.tech { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #e2e8f0; padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; }
+</style></head>
+<body>
+<div class="cover">
+  <div class="badge">Boilerplate</div>
+  <div class="icon">&#x1F527;</div>
+  <h1>WordPress Plugin <span>React Admin</span></h1>
+  <p class="subtitle">@wordpress/scripts + React + PHP</p>
+  <div class="tech-badges">
+    <span class="tech">Dashboard</span>
+    <span class="tech">CRUD</span>
+    <span class="tech">REST API</span>
+    <span class="tech">Settings</span>
+  </div>
+</div>
+</body></html>

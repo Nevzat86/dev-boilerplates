@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "My Extension",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "A Chrome extension built with React, TypeScript, and Vite",
+    "description": "The description of the extension"
+  }
+}
