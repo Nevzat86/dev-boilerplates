@@ -35,4 +35,4 @@ pnpm start
 
 ---
 
-Built by [AdeaIT](https://adeait.gumroad.com)
+Free and open-source. Built by [AdeaIT](https://github.com/Nevzat86)
